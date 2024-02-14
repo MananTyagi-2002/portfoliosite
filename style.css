@@ -1,0 +1,542 @@
+/* universally applied */
+*
+{
+    padding: 0rem;
+    margin: 0rem;
+}
+
+
+
+
+/* HTML -> BODY */
+body
+{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;                   /* 1rem = 16px */  
+}
+
+
+
+
+/* BODY -> HEADER */
+header
+{
+    height: 65vh;
+    background-image: url("image/macbook.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 3rem;
+    opacity: 0.8;
+}
+
+
+
+
+/* HEADER -> nav */
+nav ul
+{
+    list-style: none;
+    text-align: center;
+}
+nav ul li
+{
+    display: inline-block;
+    margin: 0rem 1rem 0rem;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+nav ul li a:hover
+{
+    color: rgb(180, 180, 180);
+}
+
+
+
+
+/* HEADER -> div (id = name) */
+#name
+{
+    text-align: center;
+    color: white;
+    margin-top: 10rem;
+}
+#name h1
+{
+    font-size: 3rem;
+}
+
+
+
+
+/* HEADER -> div (id = social) */
+#social
+{
+    text-align: center;
+}
+#social ul
+{
+    display: inline-block;
+}
+#social ul li
+{
+    display: inline-block;
+    margin: 0rem 0.5rem 0rem;
+}
+#social ul li a
+{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+#social ul li a i
+{
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+#social ul li a i:hover
+{
+    color: rgb(185, 185, 185);
+    box-shadow: 0px 0px 6px 4px rgba(255, 220, 220, 0.3);
+}
+
+
+
+
+
+/* GENERAL (section) */
+section
+{
+    width: 100%;
+    min-height: 20vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+section h1
+{
+    color: #2857a4;
+    display: inline-block;
+}
+section:nth-child(2n)
+{
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n + 1)
+{
+    background-color: white;
+}
+
+
+
+
+/* MAIN -> section (id = about) */
+#about
+{
+    position: relative;
+}
+#about div img
+{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    margin-top: -9rem;
+    border: 3px solid rgb(236, 236, 236);
+    box-shadow: 1px 1px 10px 3px rgb(216, 216, 216);
+}
+#about p
+{
+    text-align: justify;
+    width: 65%;
+    padding-top: 1.5rem;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* MAIN -> section (id = skills) */
+#skillsflex
+{
+    width: 70%;
+    margin-top: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cell
+{
+    display: inline-block;
+    height: 2rem;
+    font-size: 1.1rem;
+    width: 10rem;
+    margin: 3rem;
+    border: 2px solid black;
+    background-color: lightgray;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: inset 1px 1px 2px 1px #b9b9b9;
+}
+#cpp
+{
+    height: 100%;
+    /* width: 85%; */
+    padding: 0.3rem;
+    background-color: rgb(61, 145, 148);
+}
+#html
+{
+    height: 100%;
+    /* width: 80%; */
+    padding: 0.3rem;
+    background-color: orange
+}
+#css
+{
+    height: 100%;
+    /* width: 80%; */
+    padding: 0.3rem;
+    background-color: brown
+}
+#js
+{
+    height: 100%;
+    /* width: 20%; */
+    padding: 0.3rem;
+    background-color: rgb(247, 149, 165)
+}
+#python
+{
+    height: 100%;
+    /* width: 50%; */
+    padding: 0.3rem;
+    background-color: yellowgreen
+}
+#nodejs
+{
+    height: 100%;
+    /* width: 20%; */
+    padding: 0.3rem;
+    background-color: rgb(73, 161, 196);
+}
+
+
+
+
+
+/* MAIN -> section (id = experience) */
+.timeline
+{
+    position:relative;
+    /* border: 2px solid black; */
+    width: 80%;
+    height: auto;
+    margin-top: 3rem;
+}
+.timestamp
+{
+    position: relative;
+    box-sizing: border-box;
+    /* border: 2px solid pink; */
+    width: 40%;
+    margin: 2% 5%;
+    min-height: 150px;
+    overflow: hidden;
+}
+.timestamp p
+{
+    text-align: justify;
+    color: grey;
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+.timestamp img
+{
+    border-radius: 50%;
+    height: 30%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.label1
+{
+    color: teal;
+}
+.label2
+{
+    color: orange;
+}
+.label3
+{
+    color: grey;
+}
+.timestamp:nth-child(2n+1) .label1 , .timestamp:nth-child(2n+1) .label2 , .timestamp:nth-child(2n+1) .label3
+{
+    display: block;
+    text-align: end;
+}
+.timestamp:nth-child(2n)
+{
+    position: relative;
+    left: 50%;
+}
+.timestamp:nth-child(2n) .logo
+{
+    left: 81%;
+}
+.timelinedivider
+{
+    position: absolute;
+    left: 50%;
+    border-color: #0096fa6b;
+    border-style: dashed;
+    border: 0px 1px 0px 0px;
+    width: 0;
+
+    height: 75%;
+    top: 5%;
+}
+.timelinetraveller
+{
+    position: sticky;
+    top: 20%;
+    font-size: 2.5rem;
+    margin-top: -2rem;
+    margin-left: -0.55rem;
+    transform: rotate(90deg);
+}
+.points
+{
+    height: 1rem;
+    width: 1rem;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left: -0.5rem;
+    margin-top: -0.2rem;
+}
+.p1
+{
+    position: absolute;
+    top: 0%;
+}
+.p2
+{
+    position: absolute;
+    top: 35%;
+}
+.p3
+{
+    position: absolute;
+    top: 70%;
+}
+.p4
+{
+    position: absolute;
+    top: 100%;
+}
+@media screen and (max-width : 800px)
+{
+    .timelinedivider
+    {
+        left: 2%;
+    }
+    .timestamp
+    {
+        width: 80%;
+        left: 8%;
+    }
+    .timestamp:nth-child(2n+1) .label1 , .timestamp:nth-child(2n+1) .label2 , .timestamp:nth-child(2n+1) .label3
+    {
+        display: block;
+        text-align: end;
+    }
+    .timestamp:nth-child(2n)
+    {
+        position: relative;
+        /* left: 50%; */
+        left: 8%;
+    }
+    .timestamp:nth-child(2n) .logo
+    {
+        left: 80%;
+    }
+}
+
+
+
+
+
+/* MAIN -> section (id = portfolio) */
+#port-container
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.port-images
+{
+    position: relative;
+    max-width: 300px;
+    margin: 2rem;
+    overflow: hidden;
+}
+.port-images img
+{
+    width: 100%;
+    height: 100%;
+}
+.port-details
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    text-align: center;
+    color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.port-images:hover
+{
+    box-shadow: 0 0 20px #74ADC8;
+}
+.port-images:hover .port-details 
+{
+    background-color: #80808078;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* MAIN -> section (id = contact) */
+#contact
+{
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+}
+#contact h1 span 
+{
+    color: white;
+}
+#contact-form 
+{
+    margin-left: 20%;
+}
+#contact-container 
+{
+    display: flex;
+    margin-top: 5%;
+}
+#details
+{
+    width: 35%;
+    margin-left: 6%;
+}
+
+#details h3
+{
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#form
+{
+    width: 50%;
+}
+
+#details p 
+{
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container 
+{
+    margin-bottom: 20px;
+    color: #d9dcdd;
+}
+
+.my-details-info-container span 
+{
+    margin-left: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.my-details-info-container i 
+{
+    color: white;
+}
+
+.my-details-icon 
+{
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,textarea 
+{
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    /*#2857a4*/
+    color: var(--contact-light-text-color);
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    /*#1a1a1a;*/
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover
+{
+    background: white;
+    color: #13386fe0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
